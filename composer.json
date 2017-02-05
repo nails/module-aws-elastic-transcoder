@@ -21,7 +21,8 @@
     "prefer-stable": true,
     "require":
     {
-        "nailsapp/common": "dev-develop"
+        "nailsapp/common": "dev-develop",
+        "aws/aws-sdk-php": "^3.21"
     },
     "require-dev":
     {

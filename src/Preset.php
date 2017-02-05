@@ -2,13 +2,56 @@
 
 namespace Nails\Aws\ElasticTranscoder;
 
-class Preset {
+use Nails\Factory;
+
+class Preset
+{
+    protected $sId;
+
+    /**
+     * @var Client
+     */
+    protected $oClient;
+
+    // --------------------------------------------------------------------------
 
     /**
      * Preset constructor.
+     *
+     * @param array $aConfig Values to initialise the class with
      */
-    public function __construct()
+    public function __construct($aConfig = [])
     {
+        if (array_key_exists('id', $aConfig)) {
+            $this->setId($aConfig['id']);
+        }
 
+        $this->oClient = Factory::service('Client', 'nailsapp/module-aws-elastic-transcoder');
+
+        return $this;
+    }
+
+    // --------------------------------------------------------------------------
+
+    /**
+     * Set the Preset's ID
+     *
+     * @param string $sId the ID to set
+     */
+    protected function setId($sId)
+    {
+        $this->sId = $sId;
+    }
+
+    // --------------------------------------------------------------------------
+
+    /**
+     * Returns the Preset's ID
+     *
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->sId;
     }
 }
