@@ -30,7 +30,7 @@
     },
     "autoload":
     {
-        "psr-4": {"Nails\\AWS\\ElasticTranscoder\\": "src/"}
+        "psr-4": {"Nails\\Aws\\ElasticTranscoder\\": "src/"}
     },
     "extra":
     {
@@ -38,7 +38,7 @@
         {
             "moduleName": "awselastictranscoder",
             "type": "module",
-            "namespace": "Nails\\AWS\\ElasticTranscoder\\"
+            "namespace": "Nails\\Aws\\ElasticTranscoder\\"
         }
     }
 }
