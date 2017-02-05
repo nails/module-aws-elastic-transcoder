@@ -1,0 +1,43 @@
+{
+    "name": "nailsapp/module-aws-elastic-transcoder",
+    "keywords": ["Nails", "Shed Collective", "CodeIgniter", "AWS", "Elastic Transcoder", "Amazon Web Services"],
+    "homepage": "http://nailsapp.co.uk/modules/aws-elastic-transcoder",
+    "description": "This is the \"AWS Elastic Transcoder\" module for Nails.",
+    "license": "MIT",
+    "authors":
+    [
+        {
+            "name": "Pablo de la Pena",
+            "email": "p@nailsapp.co.uk",
+            "homepage": "http://nailsapp.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "support":
+    {
+        "email": "hello@nailsapp.co.uk"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require":
+    {
+        "nailsapp/common": "dev-develop"
+    },
+    "require-dev":
+    {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload":
+    {
+        "psr-4": {"Nails\\AWS\\ElasticTranscoder\\": "src/"}
+    },
+    "extra":
+    {
+        "nails" :
+        {
+            "moduleName": "awselastictranscoder",
+            "type": "module",
+            "namespace": "Nails\\AWS\\ElasticTranscoder\\"
+        }
+    }
+}
