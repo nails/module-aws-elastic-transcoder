@@ -1,5 +1,5 @@
 {
-    "name": "nailsapp/module-aws-elastic-transcoder",
+    "name": "nails/module-aws-elastic-transcoder",
     "keywords": ["Nails", "Shed Collective", "CodeIgniter", "AWS", "Elastic Transcoder", "Amazon Web Services"],
     "homepage": "http://nailsapp.co.uk/modules/aws-elastic-transcoder",
     "description": "This is the \"AWS Elastic Transcoder\" module for Nails.",
@@ -21,7 +21,7 @@
     "prefer-stable": true,
     "require":
     {
-        "nailsapp/common": "dev-develop",
+        "nails/common": "dev-develop",
         "aws/aws-sdk-php": "^3.21"
     },
     "require-dev":

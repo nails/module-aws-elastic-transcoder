@@ -57,7 +57,7 @@ class Job
             $this->setStatus(static::STATUS_NOT_STARTED);
         }
 
-        $this->oClient = Factory::service('Client', 'nailsapp/module-aws-elastic-transcoder');
+        $this->oClient = Factory::service('Client', 'nails/module-aws-elastic-transcoder');
 
         return $this;
     }

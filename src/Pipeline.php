@@ -26,7 +26,7 @@ class Pipeline
             $this->setId($aConfig['id']);
         }
 
-        $this->oClient = Factory::service('Client', 'nailsapp/module-aws-elastic-transcoder');
+        $this->oClient = Factory::service('Client', 'nails/module-aws-elastic-transcoder');
 
         return $this;
     }
