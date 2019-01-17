@@ -22,7 +22,7 @@
     "require":
     {
         "nails/common": "dev-develop",
-        "aws/aws-sdk-php": "^3.21"
+        "aws/aws-sdk-php": "3.*"
     },
     "require-dev":
     {
