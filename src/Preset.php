@@ -2,6 +2,7 @@
 
 namespace Nails\Aws\ElasticTranscoder;
 
+use Nails\Aws\ElasticTranscoder\Constants;
 use Nails\Factory;
 
 class Preset
@@ -26,7 +27,7 @@ class Preset
             $this->setId($aConfig['id']);
         }
 
-        $this->oClient = Factory::service('Client', 'nails/module-aws-elastic-transcoder');
+        $this->oClient = Factory::service('Client', Constants::MODULE_SLUG);
 
         return $this;
     }

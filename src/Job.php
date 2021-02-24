@@ -2,6 +2,7 @@
 
 namespace Nails\Aws\ElasticTranscoder;
 
+use Nails\Aws\ElasticTranscoder\Constants;
 use Nails\Aws\ElasticTranscoder\Exception\Exception;
 use Nails\Aws\ElasticTranscoder\Exception\InvalidPipeline;
 use Nails\Aws\ElasticTranscoder\Exception\InvalidPreset;
@@ -57,7 +58,7 @@ class Job
             $this->setStatus(static::STATUS_NOT_STARTED);
         }
 
-        $this->oClient = Factory::service('Client', 'nails/module-aws-elastic-transcoder');
+        $this->oClient = Factory::service('Client', Constants::MODULE_SLUG);
 
         return $this;
     }
