@@ -59,8 +59,6 @@ class Job
         }
 
         $this->oClient = Factory::service('Client', Constants::MODULE_SLUG);
-
-        return $this;
     }
 
     // --------------------------------------------------------------------------
@@ -223,13 +221,13 @@ class Job
             throw new Exception('Job has already been started');
         }
 
-        if (is_null($this->oPipeline)) {
+        if ($this->oPipeline === null) {
             throw new InvalidPipeline('No pipeline has been set');
         } elseif (!$this->oPipeline->getId()) {
             throw new InvalidPipeline('No pipeline ID has been set');
         }
 
-        if (is_null($this->oPreset)) {
+        if ($this->oPreset === null) {
             throw new InvalidPreset('No preset has been set');
         } elseif (!$this->oPreset->getId()) {
             throw new InvalidPipeline('No preset ID has been set');

@@ -49,8 +49,6 @@ class Client
         } elseif (defined('DEPLOY_AWS_ELASTIC_TRANSCODER_API_VERSION')) {
             $this->setApiVersion(DEPLOY_AWS_ELASTIC_TRANSCODER_API_VERSION);
         }
-
-        return $this;
     }
 
     // --------------------------------------------------------------------------
@@ -154,7 +152,7 @@ class Client
     /**
      * Opens the AWS ET API, connecting on demand
      *
-     * @return static
+     * @return ElasticTranscoderClient
      */
     public function api()
     {

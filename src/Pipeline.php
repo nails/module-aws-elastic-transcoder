@@ -28,8 +28,6 @@ class Pipeline
         }
 
         $this->oClient = Factory::service('Client', Constants::MODULE_SLUG);
-
-        return $this;
     }
 
     // --------------------------------------------------------------------------
